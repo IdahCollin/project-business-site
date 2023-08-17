@@ -10,20 +10,27 @@ body {
 
 /* Hero */
 .hero {
-  background-image: url("./images/hero-image.jpg");
-  height: 450px;
+  position: relative;
+  width: 100vw;
+  height: 75vh;
   color: white;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-position: 75% 75%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 28px;
 }
 
 h1 {
@@ -37,7 +44,7 @@ form {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   width: 100%;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 input,
@@ -58,7 +65,6 @@ textarea {
 .form-section {
   display: flex;
   flex-direction: row;
-
 }
 
 .form-buttons {
