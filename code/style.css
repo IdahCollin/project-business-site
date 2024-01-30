@@ -99,7 +99,7 @@ button {
 /* Footer */
 footer {
   color: white;
-  background-color: orange;
+  background-color: rgb(159, 26, 26);
   background-size: cover;
   width: 100%;
   height: 100px;
@@ -113,5 +113,42 @@ footer {
 @media screen and (min-width: 668px) {
   form {
     width: 500px
+  }
+}
+
+/* Media query mobile*/
+@media screen and (max-width: 667px) {
+  .hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  form {
+    width: 380px;
+    margin-top: 60%;
+    margin-bottom: 5%;
+  }
+
+  footer {
+    color: white;
+    background-color: rgb(159, 26, 26);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 }
